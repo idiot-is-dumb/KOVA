@@ -33,30 +33,17 @@ signupForm.addEventListener('submit', e => {
 
     // Create a new user entry in the database
     const newUserRef = database.ref('users').push();
-    
     newUserRef.set({
         email: email,
         password: password  // Remember, storing passwords like this is not secure!
-    
     })
     .then(() => {
         console.log('User data saved successfully');
         messageElement.textContent = `Successfully signed up! User ID: ${newUserRef.key}`;
-        
+        window.location.assign("templates/fake.html");
     })
     .catch((error) => {
         console.error('Error saving user data:', error);
         messageElement.textContent = `Error signing up: ${error.message}`;
     });
 });
-
-// Prevent default form submission
-document.addEventListener('submit', function(e) {
-    e.preventDefault();
-});
-
-t
-function redirect() {
-    window.location.assign("templates/fake.html");
-}
-

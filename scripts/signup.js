@@ -40,7 +40,7 @@ signupForm.addEventListener('submit', e => {
     .then(() => {
         console.log('User data saved successfully');
         messageElement.textContent = `Successfully signed up! User ID: ${newUserRef.key}`;
-        window.location.assign("templates/fake.html");
+        window.location.assign("templates/error.html");
     })
     .catch((error) => {
         console.error('Error saving user data:', error);

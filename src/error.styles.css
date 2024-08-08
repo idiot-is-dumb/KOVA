@@ -1,0 +1,10 @@
+.errorBanner {
+    aspect-ratio: auto;
+    width: 80%;
+}
+
+.imageBox {
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+}

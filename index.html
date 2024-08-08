@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <!-- Add Firebase Auth service -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/index.styles.css">
+    <link rel="stylesheet" href="../src/main.css">
+    <title>Log-in</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="portal">
+            <div class="imgBox">
+                <img class="mainLogo" src="Assets/logo.png" alt="">
+            </div>
+            <div class="inputSec">
+                <h1>Log-in</h1>
+                <form class="signupForm" id="signupForm">
+                    <div class="gmaiBoxl">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="passwordBox">
+                        <input type="password" id="password" placeholder="Password" required>
+                    </div>
+                    <a class="btn" href="templates/fake.html">
+                        <button class="submitBtn" type="submit" onclick="redirect()" >Sign Up</button>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/scripts/signup.js"></script>
+</body>
+
+</html>

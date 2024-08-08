@@ -1,0 +1,93 @@
+.imgBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainLogo {
+    aspect-ratio: auto;
+    width: 60%;
+    margin: 0px ;
+}
+
+.portal {
+    border: solid 1px black;
+    border-radius: 6px;
+    aspect-ratio: 3 4;
+    height: 55%;
+    width: 20%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    box-shadow: 10px 10px 0px black;
+    padding: 20px;
+}
+
+@media (max-width: 1024px) {
+    .portal {
+        width: 30%;
+        height: 60%;
+    }
+}
+
+@media (max-width: 660px) {
+    
+    .portal {
+        width: 60%;
+    }
+    .mainLogo {
+        width: 40%;
+    }
+
+}
+
+@media (max-width: 425px) {
+    
+    .portal {
+        width: 80%;
+        height: 60%;
+    }
+    .mainLogo {
+        width: 40%;
+    }
+
+}
+
+
+
+.btn {
+    /* border: solid 2px black; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.submitBtn {
+    /* margin: 0% 20%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputSec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 2px black; */
+}
+
+.signupForm {
+    /* border: solid 2px black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+

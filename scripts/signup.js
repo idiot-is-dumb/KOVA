@@ -1,4 +1,5 @@
 // Your web app's Firebase configuration
+// Making sure it works
 const firebaseConfig = {
     apiKey: "AIzaSyCz9YRhC0EX4nb1eLDMBwfyV06Aa2jcqEw",
     authDomain: "kavo-fakelogin.firebaseapp.com",
